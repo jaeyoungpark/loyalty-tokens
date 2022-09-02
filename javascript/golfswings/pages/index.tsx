@@ -195,7 +195,7 @@ const Home: NextPage = () => {
 
           <input
             type="text"
-            placeholder="Name of your NFT"
+            placeholder="Invitation Code"
             className={styles.textInput}
             maxLength={26}
             onChange={(e) => setNftName(e.target.value)}
