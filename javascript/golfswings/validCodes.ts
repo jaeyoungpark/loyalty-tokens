@@ -1,5 +1,5 @@
 const validCodes = [
-  "0113520659"
+  "1234"
 ];
 
 export default validCodes;

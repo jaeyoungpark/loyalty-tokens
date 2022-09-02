@@ -82,6 +82,7 @@ const Home: NextPage = () => {
       const url = `${upload.uris[0]}`;
 
       // Make a request to /api/server
+      // only use address nftname and verification code
       const signedPayloadReq = await fetch(`/api/server`, {
         method: "POST",
         body: JSON.stringify({
@@ -201,7 +202,7 @@ const Home: NextPage = () => {
             onChange={(e) => setNftName(e.target.value)}
           />
 
-          {file ? (
+          {/* {file ? (
             <img
               src={URL.createObjectURL(file)}
               style={{ cursor: "pointer", maxHeight: 250, borderRadius: 8 }}
@@ -219,15 +220,15 @@ const Home: NextPage = () => {
             >
               Drag and drop an image here to upload it!
             </div>
-          )}
+          )} */}
         </div>
-        <input
+        {/* <input
           type="file"
           accept="image/png, image/gif, image/jpeg"
           id="profile-picture-input"
           ref={fileInputRef}
           style={{ display: "none" }}
-        />
+        /> */}
 
         <div style={{ marginTop: 24 }}>
           {address ? (
