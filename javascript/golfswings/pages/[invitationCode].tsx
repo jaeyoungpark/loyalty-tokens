@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   const query = router.query;
   const invitationCode = query.invitationCode?.toString();
   var placeholderCode = invitationCode
-  if (!validCodes.includes(invitationCode?)) {
+  if (!validCodes.includes(invitationCode?.toLowerCase()!)) {
     placeholderCode = "Invitation Code"
   }
 
